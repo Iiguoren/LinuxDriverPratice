@@ -1,1 +1,0 @@
-savedcmd_/home/liguoren/LinuxDriverPractice/hello/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/liguoren/LinuxDriverPractice/hello/Module.symvers -T /home/liguoren/LinuxDriverPractice/hello/modules.order -i Module.symvers -e 
