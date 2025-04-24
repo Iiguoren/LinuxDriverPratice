@@ -1,0 +1,1 @@
+savedcmd_/home/liguoren/LinuxDriverPractice/03-gpioctrl/gpioctrl.mod := printf '%s\n'   gpioctrl.o | awk '!x[$$0]++ { print("/home/liguoren/LinuxDriverPractice/03-gpioctrl/"$$0) }' > /home/liguoren/LinuxDriverPractice/03-gpioctrl/gpioctrl.mod

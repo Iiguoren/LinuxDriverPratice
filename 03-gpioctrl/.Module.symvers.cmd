@@ -1,0 +1,1 @@
+savedcmd_/home/liguoren/LinuxDriverPractice/03-gpioctrl/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/liguoren/LinuxDriverPractice/03-gpioctrl/Module.symvers -T /home/liguoren/LinuxDriverPractice/03-gpioctrl/modules.order -i Module.symvers -e 
