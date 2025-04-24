@@ -1,1 +1,0 @@
-savedcmd_/home/liguoren/LinuxDriverPractice/03-gpioctrl/gpioctrl.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/liguoren/LinuxDriverPractice/03-gpioctrl/gpioctrl.ko /home/liguoren/LinuxDriverPractice/03-gpioctrl/gpioctrl.o /home/liguoren/LinuxDriverPractice/03-gpioctrl/gpioctrl.mod.o;  true
