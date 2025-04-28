@@ -22,21 +22,20 @@ static int __init my_init(void)
                 printk("gpioctrl-Error setting pin 20 out.\n ");
                 return state;
         }
-
-
-        button = gpio_to_desc(IO_BUTTON + IO_OFFSET);
-	gpiod_set_pull(button, GPIOD_PULL_UP);
-        if(!button)
-        {
-                printk("gpioctrl-Error getting pin 20\n");
-                return -ENODEV;
-        }
+		
+	button = gpio_to_desc(IO_BUTTON + IO_OFFSET);
+	if(!button)
+	{
+			printk("gpioctrl-Error getting pin 20\n");
+			return -ENODEV;
+	}
 	state = gpiod_direction_input(button);
 	if(state)
 	{
 		printk("gpioctrl-Error setting pin 20 input.\n ");
 		return state;
 	}
+	// 设置LED高电平
 	gpiod_set_value(led, 1);
 	printk("gpioctrl-Button is %s pressed.\n",gpiod_get_value(button)? "":"no");
 	return 0;
