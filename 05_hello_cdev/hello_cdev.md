@@ -16,6 +16,7 @@ ssize_t myread(/*这里参考fop结构体中read参数);
 file_operations fops = {
     .read = myread
 }
+```
 这样对字符设备的read操作就定义好了
 #### 结果
 载入模块:
@@ -24,3 +25,4 @@ hello_cdev-major niber is 236.
 `mknod hello0 c 236 0`
 `cat ./hello0`
 显示:hello_cdev-read is called.
+(注：这里我们虽然没有硬件设备，但是我们的驱动其实并没有对硬件进行操作，因此我们使用mknod建立一个)
