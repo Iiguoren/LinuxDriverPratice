@@ -1,1 +1,0 @@
-savedcmd_/home/liguoren/LinuxDriverPractice/07_open_release_cdev/modules.order := {   echo /home/liguoren/LinuxDriverPractice/07_open_release_cdev/hello_open_release_cdev.o; :; } > /home/liguoren/LinuxDriverPractice/07_open_release_cdev/modules.order

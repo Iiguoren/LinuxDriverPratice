@@ -1,1 +1,0 @@
-savedcmd_/home/liguoren/LinuxDriverPractice/07_open_release_cdev/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/liguoren/LinuxDriverPractice/07_open_release_cdev/Module.symvers -T /home/liguoren/LinuxDriverPractice/07_open_release_cdev/modules.order -i Module.symvers -e 

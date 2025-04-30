@@ -3,7 +3,7 @@
 
 static int my_open (struct inode *inode, struct file *f){
 	pr_info("hello_cdev-Major:%d,Minor: %d\n", imajor(inode), iminor(inode));
-	pr_info("hello_cdev-file->position: %lld.\n", file->f_pos);
+	pr_info("hello_cdev-file->position: %lld.\n", f->f_pos);
 	pr_info("hello_cdev-file->mode: 0x%x,.\n", f->f_mode);
 	return 0;
 }
@@ -21,8 +21,8 @@ ssize_t my_read(struct file *f,char __user *u, size_t l,  loff_t *o){
 static int major;
 static struct file_operations fops = {
 		.read = my_read,
-		.release = my_open,
 		.open = my_open,
+		.release = my_release
 };
 
 static int __init my_init(void)
