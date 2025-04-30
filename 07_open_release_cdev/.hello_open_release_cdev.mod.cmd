@@ -1,0 +1,1 @@
+savedcmd_/home/liguoren/LinuxDriverPractice/07_open_release_cdev/hello_open_release_cdev.mod := printf '%s\n'   hello_open_release_cdev.o | awk '!x[$$0]++ { print("/home/liguoren/LinuxDriverPractice/07_open_release_cdev/"$$0) }' > /home/liguoren/LinuxDriverPractice/07_open_release_cdev/hello_open_release_cdev.mod

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <fnctl.h>
+#include <fcntl.h>
 
 int main(int argc, char **argv){
     int fd;
@@ -14,20 +14,20 @@ int main(int argc, char **argv){
         perror("open");
         return fd;
     }
-    close fd;
+    close(fd);
 
     fd = open(argv[1], O_RDONLY|O_SYNC);
     if(fd < 0){
         perror("open");
         return fd;
     }
-    close fd;
+    close(fd);
 
-    fd = open(argv[1], O_WRDONLY|O_NOBLOCK);
+    fd = open(argv[1], O_RDONLY|O_NONBLOCK);
     if(fd < 0){
         perror("open");
         return fd;
     }
-    close fd;
+    close(fd);
     return 0;
 }

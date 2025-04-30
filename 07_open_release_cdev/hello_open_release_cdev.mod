@@ -1,0 +1,1 @@
+/home/liguoren/LinuxDriverPractice/07_open_release_cdev/hello_open_release_cdev.o
